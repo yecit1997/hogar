@@ -1,0 +1,52 @@
+/* -----------------------------------    PIE DE PAGINA   ----------------------------- */
+.pie{
+    height: 50px;
+    width: 100%;
+    justify-items: center;
+  }
+  
+  .pie-pagina{
+    display: flex;
+  }
+  
+  .parrafo-pie{
+    font-size: 12px;
+    margin-left: 10px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  
+  .facebook{
+    padding-left: 0px;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+  }
+  .contenedor-f{
+    padding-right: 10px;
+  }
+  .whatsapp{
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+  }
+  .contenedor-f{
+    padding-right: 10px;
+  }
+  
+  .contenedor-f:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+  }
+  
+  
+  .contenedor-w:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+   }

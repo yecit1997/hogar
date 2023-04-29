@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos1.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/pie.css">
+    <title>Catalogo</title>
+</head>
+<body>
+
+    <header id="cabecera" class="cabecera">
+        <div id="logo-cabecera" class="logo-cabecera">
+            <img src="../img/logo.jpg" alt="aqui va el logo" id="logo" class="logo">
+        </div>
+        <div id="titulo-cabecera" class="titulo-cabecera">
+            <h1 id="titulo" class="titulo">Todo para el hogar</h1>
+        </div>
+        
+    </header>
+    <div class="menu">
+        <img src="../img/iconos/menu.png" alt="" class="barra-menu">
+        <nav class="menu-navegacion">
+        
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/catalogo.html">Catalogo</a>
+            <a href="#Servicios">Servicios</a>
+            <a href="#pie">Contacto</a>
+            
+        </nav>
+    </div>
+
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/cosina/olla1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">OLLAS COLOR COBRE</p>
+                    <span class="precio">$ 130.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/cosina/olla2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>OLLAS EN ALUMINIO</p>
+                    <span class="precio">$ 100.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/cosina/olla3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">OLLA AROCERA</p>
+                    <span class="precio">$160.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/cosina/olla4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">FREIDORA</p>
+                    <span class="precio">$658.720</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CENTRO DE MESA</p>
+                    <span class="precio">$ 75.499</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">ARBOL DE NAVIDAD EN CIRCULO</p>
+                    <span class="precio">$ 168.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">VELEROS</p>
+                    <span class="precio">$ 15.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">LETRAS PARA REPISA</p>
+                    <span class="precio">$ 5.800</span>
+                </div>
+            </div> 
+
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">CENTRO DE MESA</p>
+                    <span class="precio">$ 75.499</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">ARBOL DE NAVIDAD EN CIRCULO</p>
+                    <span class="precio">$ 168.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">VELEROS</p>
+                    <span class="precio">$ 15.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/productos/decoracion/decoracion7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">LETRAS PARA REPISA</p>
+                    <span class="precio">$ 5.800</span>
+                </div>
+            </div> 
+
+            
+        </div>
+
+
+        
+        
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715  <!--Esta combinacion nos sirve para sacar una X; Tambien podemos sacar muchas mas figuras-->
+            </div>
+            <div class="info">
+                <img src="../img/logo.jpg" alt="" id="img"> <!--En la imagen del contenedor, podemos colocar cualquier imagen como para un contenedor-->
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">UNIDADES</label>
+                        <select itemid="selector" class="selector" name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button id="agreagar-c" class="agregar-c"  onclick="agr()">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="linea">
+    <br>
+    <footer id="pie" class="pie">
+        <div id="pie-pagina" class="pie-pagina">
+          <p id="parrafo-pie" class="parrafo-pie">
+            <em> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo <b>Todo para el hogar&copy;</b>.</em>  &nbsp; contactanos
+          </p>
+          <div class="contenedor-f">
+            <img src="../img/iconos/facebook.png" alt="icono de facebook" id="facebook" class="facebook">
+  
+          </div>
+  
+          <div class="contenedor-w">
+            <img src="../img/iconos/whatsapp.png" alt="icono de whatsapp" id="whatsapp" class="whatsapp">
+  
+          </div>
+        </div>
+  
+      </footer>
+  
+  <script src="../js/menu.js"></script>
+  <script src="../js/contacto.js"></script>
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>
