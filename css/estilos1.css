@@ -1,0 +1,242 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ body{
+  max-width: 1350px;
+  min-width: 900px;
+  overflow-wrap: break-word;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+ }
+ :root{
+  scroll-behavior: smooth ;
+ }
+
+ .portada{
+  box-shadow: 0 0 6px rgba(0,0, 0, .5);
+ }
+ 
+ /* Objetos cabecera */
+
+ .cabecera{
+   background-color: #ffd11a;
+   display: flex;
+   width: 100%;
+   color: #fff;
+  
+ }
+
+ .titulo-cabecera{
+  
+   padding-left: 25.5%;
+   margin: 10px;
+   height: 80px;
+   
+   justify-content: center;
+
+ }
+ .titulo{
+  justify-content: center;
+ 
+ }
+
+ .logo{
+    background-color: rgba(149, 240, 184, 0.836);
+    padding: 2px;
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+ }
+
+ /* Barra menu */
+ .barra-menu{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0, 0, .5);
+  background-color: #fff;
+ }
+ .menu-navegacion{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100%;
+  background-color: #ffe066;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  transition: transform .3s ease-in-out;
+  transform: translate(110%);
+  box-shadow: 0 0 6px rgba(0,0, 0, .5);
+ }
+ 
+ .spread{
+  /* clase adiccional para mostrar el menu */
+  transform: translate(0);
+
+ }
+
+ .menu-navegacion a{
+  color: #050505;
+  text-decoration: none;
+ }
+
+
+
+
+
+ /* contenedor general */
+
+ .main{
+   width: 100%;
+  
+ }
+
+ 
+
+ /* slider */
+
+ .slider{
+  padding-top: 7%;
+   margin: 30px;
+   width: 90px;
+   height: 90px;
+   
+
+   background-image: url(../img/productos/cosina/olla4.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   line-height: 40px;
+   color: rgb(7, 7, 7);
+   text-shadow: #b3fd07  3px 3px 3px;
+   
+   
+
+   /* ----GALERIA DE FONDOS------ */
+
+   animation: baner 10s infinite linear alternate;
+   position: relative;
+ }
+
+ /* cuerpo */
+ .cuerpo{
+    height: 45vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: black;
+ }
+.cuerpo img{
+  width: 200px;
+  margin: 0 50px;
+}
+.cuerpo .info{
+  width: 600px;
+  margin: 0 50px;
+}
+
+
+ 
+/* ---------------------------------------------------------------------------------------- */
+.container{
+  margin: auto;
+  background-color: #fff;
+  width: 800px;
+  padding: 30px;
+}
+
+ul, li{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background: #fff;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child{
+  opacity: 1; /* primer li*/
+}
+
+ul.slider li:target{
+  opacity: 1; /* Mostramos el li del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  margin: 20px;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 100%;
+} 
+
+#slide1{ 
+  background-color: aqua;
+  background: -webkit-radial-gradient(top, #f1b6b6, #006699);
+  background: -moz-linear-gradient(top, #e6b2b2, #006699);
+}
+#slide1 a{
+  text-decoration: none;
+}
+#slide1 a:hover{
+  font-size: 18px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
